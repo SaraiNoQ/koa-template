@@ -57,6 +57,13 @@ node index.js
 │  └─service # 业务逻辑层
 ├─static
 |   └─images # 图片文件夹
-└─.vscode
-    └─extension.json # 插件配置文件
+|
+├─.vscode
+|   └─extension.json # 插件配置文件
+|
+├─.env # 配置文件
+|
+├─.env.development # 开发环境配置文件
+|
+└─.env.production # 生产环境配置文件
 ```
