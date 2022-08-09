@@ -27,6 +27,8 @@ module.exports = {
 				'build',
 				// 其他改动，如改变构建流程、或者增加依赖库、工具
 				'chore',
+				// 初始化
+				'init',
 			]
 		],
 		'subject-full-stop': [0, 'never'],
