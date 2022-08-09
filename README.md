@@ -7,12 +7,25 @@
 npm install -g pnpm
 ```
 
+### 安装依赖
+
 ```bash
-pnpm install && node index.js
+pnpm install
 ```
+
+### 启动服务
+
+```bash
+node index.js
+```
+### 修改配置
+> 本项目默认端口为5671，若您需要修改，请在根目录下创建`.env`文件并配置`APP_PORT`属性来修改端口号。
+
+另外，所有配置都可以写入`.env`。如需区分生产和开发环境，请配置`.env.production`文件和`.env.development`文件。
 
 ## 目录结构
 
+```bash
 ├─src
 │  ├─app # 应用代码
 │  │      error.js
@@ -46,3 +59,4 @@ pnpm install && node index.js
 |   └─images # 图片文件夹
 └─.vscode
     └─extension.json # 插件配置文件
+```
