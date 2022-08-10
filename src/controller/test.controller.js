@@ -9,9 +9,7 @@ class TestController {
 					code: 200,
 					message: 'success',
 				},
-				data: {
-					data,
-				}
+				data,
 			};
 		} catch (error) {
 			console.error(error);
