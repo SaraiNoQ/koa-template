@@ -4,7 +4,7 @@ const { validateDemo } = require('../middleware/test.middleware');
 const { responseDemo }  = require('../controller/test.controller');
 
 const router = new Router({
-	prefix: '/test'
+	prefix: '/api/test'
 });
 
 router.get('/', async (ctx) => {
@@ -16,6 +16,6 @@ router.get('/', async (ctx) => {
 	};
 });
 
-router.post('/init', validateDemo, responseDemo);
+router.post('/', validateDemo, responseDemo);
 
 module.exports = router;

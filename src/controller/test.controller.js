@@ -2,11 +2,15 @@ const { testBussinessError } = require('../constants/err.type');
 
 class TestController {
 	async responseDemo (ctx) {
+		const data = ctx.request.body;
 		try {
 			ctx.body = {
 				status: {
 					code: 200,
 					message: 'success',
+				},
+				data: {
+					data,
 				}
 			};
 		} catch (error) {
