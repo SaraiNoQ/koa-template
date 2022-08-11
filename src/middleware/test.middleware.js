@@ -1,6 +1,7 @@
 // middleware demo
 const validateDemo = async(ctx, next) => {
 	const data = ctx.request.body;
+	console.log('sdk info', data);
 	if (!data) {
 		ctx.body = {
 			status: {
