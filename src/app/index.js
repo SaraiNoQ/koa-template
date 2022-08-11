@@ -15,7 +15,6 @@ app
 	.use(cors({
 		// origin: 'http://localhost:5671', // 允许访问的域名
 		origin: (ctx) => {
-			console.log(ctx);
 			if (ctx.url === '/api/test') {
 				return '*';
 			} else {
